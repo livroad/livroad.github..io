@@ -1,49 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile</title>
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="./stylesheet.css">
-</head>
-<body>
-  <div class="header">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <title>大学生エンジニア近藤崇樹</title>
+  </head>
+  <body>
     <div class="container">
-      <h1>Takaki's Profile<i class="fas fa-book fa-fw icon"></i></h1>
-      <h2>Web制作エンジニア</h2>
-      <ul>
-        <li>名前：近藤崇樹（こんどうたかき）</li>
-        <li>年齢：20歳</li>
-        <li>出身地：愛知県</li>
-        
-      </ul>
-      <div class="right">
-        <img src="img/IMG_5624.JPG">
+      <header>
+        <div class="header-top">
+          <div class="header-middle" id="header-middle">
+            <h1>Kondo Takaki</h1>
+            <p class="hide-text">Web Engineer</p>
+          </div>
+          <div class="header-right">
+            <div class="img-area">
+              <div class="slides">
+                <ul>
+                  <li class="slide active-slide"><img src="img/IMG_9350.JPG"></li>
+                  <li class="slide"><img class="s-2"src="img/IMG_6318.JPG"></li>
+                  <li class="slide"><img class="s-3"src="img/IMG_8418.JPG"></li>
+                </ul>
+              </div>
+              <p class="prev-btn change-btn">←前へ</p>
+              <p class="next-btn change-btn">次へ→</p>
+            </div>
+          </div>
+        </div>
+        <nav>
+            <a href="#about" class="mr-5 btn btn-info">about</a>
+            <a href="#skill" class="mx-5 btn btn-info">skill</a>
+            <a href="#this-page" class=" mx-5 btn btn-info">this-page</a>
+            <a href="#contact" class="ml-5 btn btn-info">contact</a>
+
+        </nav>
+      </header>
+
+      <div class="moda">
+        Welcome!
+      </div>
+
+
+      <div class="about" id="about">
+        <h2>About Me</h2>
+        <p>こんにちは！大学生エンジニアの近藤 崇樹です！<span class="skyborder">現在２０歳で大学３年生です。</span></p>
+        <p>プログラミング学習歴は３カ月ほどで、簡単なWeb制作を行うことができます。</p>
+
+        <div class="alert alert-primary" role="alert">
+            僕が<strong>プログラミングスキル</strong>を身に着けようと思ったきっかけ
+        </div>
+        <p>僕は、大学１年生のころ初めてアルバイトというものを始めました。</p>
+        <p>
+          そこでは働くことを通して様々なことを学びました。しかし、<span class="skyborder">特別なスキルなんて何も持っていない僕に任せられる仕事は、当然ながら、単純作業など誰にでもできるような仕事でした。</span></p>
+        <p>その日もコンビニ業務でくたくたに疲れ果てた僕は帰り道に一人つぶやきました。</p>
+        <p><span class="orangeborder">「自分の代わりになる人材はいくらでもいるのか、、、」</span></p>
+        <p>そしてなにより、このまま一生好きでもないことをして生きてくのを想像すると耐えられませんでした。</p>
+        <p><span class="skyborder">自分にしかできない仕事をしたい。自分の活躍の場を広げたい。</span>そう感じました。</p>
+        <p>僕はその日から自分のスキルに応じて報酬をもらえるような仕事を探し始めました。</p>
+        <p>そこで見つけたのがプログラミングスキルを身に着け、エンジニアとして働くというものでした。</p><br>
+        <p><strong>こうして僕はプログラミングの世界に足を踏み入れました。まだまだスキル不足ではありますが、将来はWeb制作だけではなく、アプリ開発などもやってみたいと考えております。</strong><span class="skyborder">そして、自分のスキルが誰かの役に立つような日が来ることを信じてこれからも経験を積んでスキルアップに励みます！</span></p>
+          <!-- <p>将来は</p> -->
+      </div>
+      <div class="skill" id="skill">
+        <h2>My Programing Skill</h2>
+        <table class="table ">
+          <tbody>
+            <tr>
+              <th scope="row"></th>
+                <td>HTML</td>
+                <td>ページ全体の構造をわかりやすく作ります。</td>
+              
+            </tr>
+            <tr>
+              <th scope="row"></th>
+                <td>CSS</td>
+                <td>希望に沿ったデザインに仕上げます。</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+                <td>JavaScript・JQuery</td>
+                <td>サイトに動きをつけます。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="this-page" id="this-page">
+        <h2>This Page</h2>
+        <p>このページは、<span class="skyborder">現在の自分のプログラミングスキルを見た人にわかってもらう</span>ということを意識して、ゼロから自分で作ったものです。</p>
+        <span class="menu-name"><i class="fas fa-user-astronaut fa-fw"></i>このページの特徴や機能</span>
+        <div class="fn-menu">
+          <ul>
+            <!-- <li>このページではFlexboxとBootstrapを使ってスタイリングしています。</li> -->
+            <li>ページ上部の「Kondo Takaki」をクリックすると、固定のヘッダーが出ます。</li>
+            <li>ページ上部の青色の枠で囲まれた、ナビゲーションメニューをクリックすると、その項目まで移動します。</li>
+            <li>ページ右上の写真の切り替えお試しください。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact" id="contact">
+        <h2>Contact</h2>
+          <p class="info">Mail</p>
+          <p class="ml-4">takaki0106kondo@icloud.com</p>
+          <p class="info">Phone</p>
+          <p class="ml-4">090-4235-8568</p>
       </div>
     </div>
-  </div>
-  <div class="first co">
-    <div class="container">
-      <h3>About Me</h3>
-      <p>
-        はじめまして！２０歳大学生の近藤崇樹と申します。現在、プログラミング学習を始めて３か月ほどで、HTML・CSSを使ったコーディングを行うことができます。このプロフィールサイトは、ゼロから自分で作り上げたものです。
-      </p>
-    </div>
-  </div>
-  <div class="skill co">
-    <div class="container">
-      <h3>SKILL</h3>
-      <p>HTML</p>
-      <p>CSS</p>
-      <p>Responsive</p>
-    </div>
-  </div>
-  <div class="last co">
-    <div class="container">
-      <h3>Message</h3>
-      <p>任せていただいたお仕事には、責任をもって取り組むことをお約束します。納期期限をきちんと守ることはもちろん、<span>丁寧なコミュニケーション</span>を心がけています。また、エンジニアとして十分なスキルを身に着けるまでの間、最初に提示された金額よりも、<span>低い報酬金額</span>で仕事を承りますのでご相談ください。</p>
-    </div>
-  </div>
-</body>
+    <footer>
+      
+      <p><a href="#header-middle">
+        Kondo Takaki</a></p>
+    </footer>
+    
+    <script>
+      $('h1').click(function(){
+        // $('h1').text("Welcome!");
+        
+      });
+
+      $('h1').click(
+        function(){
+          $('.moda').addClass('moda-active');
+        });
+
+        $('.moda-active').click(function(){
+          $('.moda').removeClass('moda-active');
+        });
+
+
+      $('.change-btn').click(function(){
+
+        var $displaySlide = $('.active-slide');
+        $displaySlide.removeClass('active-slide');
+        if($(this).hasClass('next-btn')){
+          $displaySlide.next().addClass('active-slide');
+        }else{
+          $displaySlide.prev().addClass('active-slide');
+        }
+
+        var slideIndex = $('.slide').index($('.active-slide'));
+
+        $('.change-btn').show();
+        if(slideIndex===0){
+          $('.prev-btn').hide();
+        }else if(slideIndex===2){
+          $('.next-btn').hide();
+        }
+      });
+
+    </script>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
